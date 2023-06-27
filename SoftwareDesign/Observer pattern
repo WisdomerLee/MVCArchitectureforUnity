@@ -1,0 +1,18 @@
+Design pattern을 쓰면 좋은 것
+Proven 
+Language-agnostic : 모든 언어에 적용 가능
+Faster development/maintenance 
+
+Creational : 뭔가를 만들 때
+Structural : 구조를 연결할 때
+Behavioral : 행동을 지정할 때
+
+
+Oberver Pattern
+: behavioral design pattern
+
+Loose coupling. 커플링을 줄여줌 하지만 이벤트를 보내주는 곳에 대한 참조는 필요함
+subject/observer의 수정 없이 데이터를 교환할 수 있음
+여러 observer들을 쉽게 더하거나 제거할 수 있음
+
+이벤트가 가장 대표적인 예시!!!
