@@ -1,0 +1,23 @@
+
+Established Architecture
+
+MVP 
+Model-Persenter-View
+Presenter: user input
+Persenter ->view로 render
+사용자 입력이 매우 많고 view에 update가 많을 때 좋은 architecture
+
+MVVM
+Model - View Model - View
+ViewModel : user input
+ViewModel -> view로 rendering
+사용자 입력이 매우 많고 view에 update가 많을 때 좋은 architecture
+
+MVC
+Model-Controller -View
+Controller: user input
+Controller-Model, View 상호작용
+데이터를 저장하고 여러 곳에서 데이터를 쓰는 형태에 좋은 편
+
+UI를 데이터와 분리시켜 유지할 수 있음
+영역을 분리하여 개발하므로 개발하는 속도 증가
