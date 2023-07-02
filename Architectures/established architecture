@@ -21,3 +21,13 @@ Controller-Model, View 상호작용
 
 UI를 데이터와 분리시켜 유지할 수 있음
 영역을 분리하여 개발하므로 개발하는 속도 증가
+
+
+MVC
+Model : 데이터처리
+View: UI와 입력 처리
+Controller : 모든 곳에 관여...
+
+원래 일반적인 MVC 구조에서는 controller가 입력을 담당하나, 
+Unity로 적용하는 MVC 구조에서는 View가 입력을 감지하고, controller가 입력을 처리하는 형태
+
