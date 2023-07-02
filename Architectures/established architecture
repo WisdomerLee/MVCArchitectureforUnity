@@ -31,3 +31,41 @@ Controller : 모든 곳에 관여...
 원래 일반적인 MVC 구조에서는 controller가 입력을 담당하나, 
 Unity로 적용하는 MVC 구조에서는 View가 입력을 감지하고, controller가 입력을 처리하는 형태
 
+MVCS: MVC 구조에 Service가 추가된 형태
+
+Model: 데이터 처리
+View : UI와 입력 처리
+Controller: 모든 곳에 관여
+Service : 외부 데이터 처리
+
+
+MVC 패턴을 unity에 적용하기 위해서는...
+
+
+Model : 데이터 처리
+Controller : 모든 것에 관여
+View - UI와 입력 처리
+Service : 외부 데이터 처리
+controller: model의 메소드를 호출
+model : event를 controller에 뿌림
+
+MVCS가 없을 때
+버튼 이벤트 > View Method
+
+MVCS에서는 아래의 경로들 중에 하나를 선택
+View Button Event -> Controller Method -> Model Event -> View Method
+View Button Command -> Controller Method -> Model Event -> Veiw Method
+View Button Event -> Controller Method -> Model Event -> Controller Command -> View Method
+View Button Command -> Controller Method -> Model Event -> Controller Command -> View Method
+
+위의 상황만 보면 MVCS를 쓰는 것이 좋지 않아보이나...
+Refactoring을 실행하거나 할 때 쉽게 변경할 수 있음
+
+UMVC by Loic-Lopez
+HMVC by Bellusvita
+MVP toolkit by VBandi
+Pure MVC by FutureScale
+Karma MVC by CGarciae
+UMVCS by RMC
+Mini MVCS by RMC
+...
